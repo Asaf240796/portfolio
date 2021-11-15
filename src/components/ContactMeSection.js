@@ -1,8 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const ContactMeSection = () => {
     return (
-        <div className="ContactMe">
+        <ContactMe>
             <h2>Contact <span>Me</span> </h2>
             <nav>
                 <ul>
@@ -11,8 +12,15 @@ const ContactMeSection = () => {
                     <li><a href="mailto:asaf240796@gmail.com"><i class="fas fa-at"></i></a></li>
                 </ul>
             </nav>
-        </div>
+        </ContactMe>
     );
 };
+
+//Style components
+const ContactMe = styled.div`
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+`
 
 export default ContactMeSection;
