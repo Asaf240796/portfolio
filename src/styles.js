@@ -32,11 +32,11 @@ export const Image = styled.div`
 flex: 1;
 overflow: hidden;
 img {
-  width: 40vh;
-  height: 40vh;
+  width: 50vh;
+  height: 50vh;
   border-radius: 50%;
   object-fit: cover;
-  
+  margin-left: 20vh;
 }
 `;
 export const Hide =styled.div`

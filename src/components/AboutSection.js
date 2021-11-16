@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../img/20201017_131307.jpg";
 import avatar from "../img/avataaars.svg"
 //Styled
 import styled from "styled-components";
@@ -22,12 +21,12 @@ const AboutSection = () => {
           oriented thinking skill.
         </p>
         <p className="specipic-knowledge">
-          HTML5 | CSS | JavaScript | React js{" "}
+          HTML5 | CSS | JavaScript | React js
         </p>
         <button>Resume</button>
         </Description>
       <Image>
-        <img src={avatar} alt="toy's pic" />
+        <img src={avatar} alt="my avatar pic" />
       </Image>
     </About>
   );
