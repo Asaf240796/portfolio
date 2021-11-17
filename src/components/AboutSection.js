@@ -1,5 +1,6 @@
 import React from "react";
-import avatar from "../img/avataaars.svg"
+import winkAvatar from "../img/winkAvatar.svg"
+import defaultavtar from "../img/defaultAvatar.svg"
 //Styled
 import styled from "styled-components";
 import {About, Description, Image, Hide} from "../styles"
@@ -23,15 +24,20 @@ const AboutSection = () => {
         <p className="specipic-knowledge">
           HTML5 | CSS | JavaScript | React js
         </p>
-        <button>Resume</button>
+        <a href="https://drive.google.com/file/d/1d4XgCCiYh0FM3teyZtwz79jmKzX0mLT6/view?usp=sharing"><button>Resume</button></a>
+        
         </Description>
       <Image>
-        <img src={avatar} alt="my avatar pic" />
+        <img src={defaultavtar} alt="defaultAv" 
+        onMouseOver={ e => (e.currentTarget.src = winkAvatar)} 
+        onMouseOut={ e => (e.currentTarget.src = defaultavtar)}/>
       </Image>
     </About>
   );
 };
 
 //Styled Components
+
+
 
 export default AboutSection;

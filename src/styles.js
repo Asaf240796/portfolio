@@ -26,6 +26,12 @@ button {
   margin: 10vh; */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size:1.1rem;
+    &:hover {
+    background: #23D997;
+    color: black;
+    font-size: 1.1rem;
+  }
 }
 `;
 export const Image = styled.div`

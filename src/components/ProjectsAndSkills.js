@@ -14,7 +14,7 @@ const ProjectsAndSkills = () => {
           <Card>
             <h3>Music Player</h3>
             <p> This is my bla bla project...</p>
-            <img src={MusicPlayerScreenShot} alt="screenshot" />
+            {/* <img src={MusicPlayerScreenShot} alt="screenshot" /> */}
           </Card>
           <Card>
             <h3>portfolio</h3>
@@ -57,13 +57,13 @@ const Card = styled.div`
   flex-basis: 20rem;
   text-align: left;
   
-  img {
+  /* img {
     float: right;
     padding: 1rem;
     height: 600px;
     border-radius: 5%;
     padding-top: 0px;
-  }
+  } */
   h3 {
     text-align: center;
     width: 550px;

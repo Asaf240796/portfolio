@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
 //import react-icons
-import { FaGithub, FaLinkedin, FaEnvelope, FaRegBell } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 
 const ContactMeSection = () => {
   return (
@@ -14,17 +14,17 @@ const ContactMeSection = () => {
         <ul>
           <li>
             <a href="www.linkedin.com/in/asaf-elazar">
-              <FaLinkedin size="5em" color="blue" />
+              <FaLinkedin size="5em" color="#0e76a8" />
             </a>
           </li>
           <li>
             <a href="https://github.com/Asaf240796">
-              <FaGithub size="5em" color="white" />
+              <FaGithub size="5em" color="#0e76a8" />
             </a>
           </li>
           <li>
             <a href="mailto:asaf240796@gmail.com">
-              <FaEnvelope size="5em" color="#00FFFF" />
+              <FaEnvelope size="5em" color="#0e76a8" />
             </a>
           </li>
         </ul>
@@ -34,7 +34,11 @@ const ContactMeSection = () => {
 };
 
 //Style components
-const ContactMe = styled(About)`
+const ContactMe = styled.nav`
+align-items: center;
+justify-content: space-between;
+padding: 5rem 10rem;
+color: white;
   display: block;
 `;
 
