@@ -1,50 +1,67 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
-    return (
-        <StyledNav>
-            <h1> <a id="logo" href="#">Asaf's Portfolio</a> </h1>
-            <ul>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </StyledNav>
-    );
+  return (
+    <StyledNav>
+      <h1>
+        <Link id="logo" to="/">
+          Asaf's Portfolio
+        </Link>
+      </h1>
+      <ul>
+        <li>
+          <Link to="/">About</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </StyledNav>
+  );
 };
 
 const StyledNav = styled.nav`
-min-height: 10vh;
-display: flex;
-margin: auto;
-justify-content: space-between;
-align-items: center;
-padding: 1rem 10rem;
-background: #282828 ;
-a{
+  min-height: 10vh;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+  background: #282828;
+  a {
     color: white;
     text-decoration: none;
-}
-ul{
+  }
+  ul {
     display: flex;
     list-style: none;
-}
-#logo{
+  }
+  #logo {
     font-size: 1.5rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
-}
-li{
+  }
+  li {
     padding-left: 10rem;
     position: relative;
-}
-`
+  }
+  @media (max-width: 1300px) {
+      flex-direction: column;
+      padding: 2rem 0rem;
+      ul{
+        padding: 2rem;
+        justify-content: space-around;
+        width: 100%;
+      }
+      li{
+        padding: 0;
+      }
+    }
+`;
 
 export default Nav;

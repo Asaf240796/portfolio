@@ -2,11 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
 //import react-icons
-import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+//Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const ContactMeSection = () => {
   return (
-    <ContactMe>
+    <ContactMe
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <h2>
         Contact <span>Me</span>{" "}
       </h2>
@@ -34,11 +42,11 @@ const ContactMeSection = () => {
 };
 
 //Style components
-const ContactMe = styled.nav`
-align-items: center;
-justify-content: space-between;
-padding: 5rem 10rem;
-color: white;
+const ContactMe = styled(motion.nav)`
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
   display: block;
 `;
 
@@ -55,6 +63,15 @@ const IconsList = styled.div`
   }
   ul li a {
     font-size: 20px;
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 0rem;
+    ul li {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+    }
   }
 `;
 
