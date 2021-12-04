@@ -21,7 +21,7 @@ const ContactMeSection = () => {
       <IconsList>
         <ul>
           <li>
-            <a href="www.linkedin.com/in/asaf-elazar">
+            <a href="https://www.linkedin.com/in/asaf-elazar">
               <FaLinkedin size="5em" color="#0e76a8" />
             </a>
           </li>
