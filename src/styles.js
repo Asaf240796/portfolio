@@ -58,6 +58,8 @@ export const Image = styled.div`
     margin-left: 20vh;
     @media (max-width: 1300px) {
       margin: 2rem 0rem 5rem 0rem;
+      max-width: 100%;
+      height: auto;
     }
   }
 `;

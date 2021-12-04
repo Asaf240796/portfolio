@@ -48,6 +48,10 @@ const ContactMe = styled(motion.nav)`
   padding: 5rem 10rem;
   color: white;
   display: block;
+  @media (max-width: 1300px){
+    text-align: center;
+    
+  }
 `;
 
 const IconsList = styled.div`
@@ -62,7 +66,7 @@ const IconsList = styled.div`
     cursor: pointer;
   }
   ul li a {
-    font-size: 20px;
+    font-size: 10px;
   }
   @media (max-width: 1300px) {
     flex-direction: column;

@@ -76,8 +76,8 @@ const Skills = styled(About)`
     padding: 2rem 0rem 4rem 1.5rem;
   }
   @media (max-width: 1300px) {
-      margin: 2rem 0rem 5rem 0rem;
-    }
+    margin: 2rem 0rem 5rem 0rem;
+  }
 `;
 const Cards = styled.div`
   display: flex;
@@ -108,8 +108,16 @@ const Card = styled.div`
     text-shadow: 0.1rem 0.1rem 0.1rem #ababab;
   }
   @media (max-width: 1300px) {
-      justify-content: center;
+    justify-content: center;
+    p {
+      text-align: center;
+      padding-right: 5rem;
     }
+    h3{
+      text-align: center;
+      padding-right: 20rem;
+    }
+  }
 `;
 
 export default ProjectsAndSkills;
