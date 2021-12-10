@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import MusicPlayerScreenShot from "../img/MusicPlayerScreenshot.png";
 import { About, Description, Image, Hide } from "../styles";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import Wave from "./Wave";
 
 const ProjectsAndSkills = () => {
   return (
@@ -27,9 +27,9 @@ const ProjectsAndSkills = () => {
               <p>
                 Designed and deploy a web app music player that plays a songs.
                 built a dynamic song logo that animate and circle when the song
-                is playing. Github code
+                is playing.
                 <a href="https://github.com/Asaf240796/MusicPlayer">
-                  <span> HERE</span>{" "}
+                  <span>Github code HERE</span>{" "}
                 </a>
               </p>
             </Card>
@@ -39,19 +39,20 @@ const ProjectsAndSkills = () => {
                 <h3>GamesPortal</h3>
               </a>
               <p>
-                Designed and deploy a Web App using redux that show the 12
-                Upcoming, Best and Newest games according to RWAG api. built A
-                dynamic stats that changes according to the gamers rating.
-                Github code
+                Designed and deploy a Web App that show the 12 Upcoming, Best
+                and Newest games according to RWAG api. built A dynamic stats
+                that changes according to the gamers rating. In this project I
+                used react redux, react Route and styled components.
                 <a href="https://github.com/Asaf240796/GamesPortal">
-                  <span> HERE</span>{" "}
+                  <span>Github code HERE</span>{" "}
                 </a>
               </p>
             </Card>
-            <Card>
+            <Wave/>
+            {/* <Card>
               <h3>NearMe</h3>
               <p>like easy... click here to see the code on GitHub</p>
-            </Card>
+            </Card> */}
             <Card>
               <h3>B.Sc. degree project</h3>
               <p>
@@ -113,7 +114,7 @@ const Card = styled.div`
       text-align: center;
       padding-right: 5rem;
     }
-    h3{
+    h3 {
       text-align: center;
       padding-right: 20rem;
     }

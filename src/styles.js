@@ -51,14 +51,14 @@ export const Image = styled.div`
   flex: 1;
   overflow: hidden;
   img {
-    width: 50vh;
-    height: 50vh;
+    width: 42vh;
+    height: 45vh;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 20vh;
+    margin-left: 10vh;
     @media (max-width: 1300px) {
-      margin: 2rem 0rem 5rem 0rem;
-      max-width: 100%;
+      margin: 0 auto;
+      width: auto;
       height: auto;
     }
   }

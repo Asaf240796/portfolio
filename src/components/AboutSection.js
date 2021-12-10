@@ -43,7 +43,7 @@ const AboutSection = () => {
           <p className="specipic-knowledge">
             HTML5 | CSS | JavaScript | React js
           </p>
-          <a href="https://drive.google.com/file/d/1d4XgCCiYh0FM3teyZtwz79jmKzX0mLT6/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1SEy0bjSnu8LKkopD2qRud_3AHJq-7Hus/view?usp=sharing">
             <button>Resume</button>
           </a>
         </Description>
@@ -62,5 +62,8 @@ const AboutSection = () => {
 };
 
 //Styled Components
+// const StyledImage = styled.img`
+// background-color: gray ;
+// `
 
 export default AboutSection;
