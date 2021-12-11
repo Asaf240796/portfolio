@@ -15,6 +15,7 @@ const ProjectsAndSkills = () => {
       animate="show"
     >
       <Skills>
+      <Wave />
         <Description>
           <h2>
             Projects <span>and</span> skills
@@ -48,7 +49,6 @@ const ProjectsAndSkills = () => {
                 </a>
               </p>
             </Card>
-            <Wave/>
             {/* <Card>
               <h3>NearMe</h3>
               <p>like easy... click here to see the code on GitHub</p>
