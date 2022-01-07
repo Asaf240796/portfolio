@@ -94,7 +94,7 @@ const Card = styled.div`
 
   a {
     cursor: pointer;
-    text-decoration: none;
+    // text-decoration: none;
   }
 
   h3 {
